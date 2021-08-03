@@ -4,4 +4,4 @@ COPY requirements.txt .
 RUN apk add --no-cache tzdata \
  && python3 -m pip install --no-cache-dir -r requirements.txt
 COPY . .
-CMD ["python3", "main.py"]
+ENTRYPOINT ["python3", "main.py"]
